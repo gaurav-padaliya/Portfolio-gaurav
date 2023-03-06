@@ -8,10 +8,6 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink1 =
-  "https://housingfactory.s3.ap-south-1.amazonaws.com/attendanceFile/2022/1a2fd8ad-d13e-457b-9f7d-b0fada3a32b0.pdf";
-// const resumeLink =
-//   "https://raw.githubusercontent.com/soumyajit4419/portfolio/master/src/Assets/Soumyajit_Behera-BIT_MESRA.pdf";
 const resumeLink =
   "https://raw.githubusercontent.com/gaurav-padaliya/Portfolio-gaurav/main/src/Assets/Resume03_23.pdf";
 
@@ -40,7 +36,8 @@ function ResumeNew() {
 
         <Row className="resume">
           <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} scale={width > 500 ? 0.9 : 0.6} />
+            <Page pageNumber={2} scale={width > 500 ? 0.9 : 0.6} />
           </Document>
         </Row>
 
