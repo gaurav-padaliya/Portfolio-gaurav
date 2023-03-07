@@ -13,6 +13,8 @@ import {
   SiPytorch,
   SiFirebase,
   SiNextdotjs,
+  SiMysql,
+  SiPostgresql,
 } from "react-icons/si";
 
 function Techstack() {
@@ -34,7 +36,7 @@ function Techstack() {
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
@@ -46,7 +48,7 @@ function Techstack() {
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch />
+        <SiPostgresql />
       </Col>
     </Row>
   );
