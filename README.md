@@ -2,9 +2,9 @@
   Portfolio Website - v2.0<br/>
   <a href="https://Portfolio-gaurav-livid.vercel.app/" target="_blank">gaurav.tech</a>
 </h2>
-<div align="center">
+<!-- <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+</div> -->
 
 <br/>
 
