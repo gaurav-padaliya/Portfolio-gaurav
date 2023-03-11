@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://Portfolio-gaurav-gaurav-livid.vercel.app/" target="_blank">gaurav.tech</a>
+  <a href="https://Portfolio-gaurav-livid.vercel.app/" target="_blank">gaurav.tech</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
@@ -27,11 +27,11 @@
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [gaurav-padaliya](https://github.com/gaurav-padaliya/Portfolio-gaurav-gaurav). Thanks!
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [gaurav-padaliya](https://github.com/gaurav-padaliya/Portfolio-gaurav). Thanks!
 
 ## Built With
 
-My personal portfolio <a href="https://Portfolio-gaurav-gaurav-livid.vercel.app/" target="_blank">gaurav.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://Portfolio-gaurav-livid.vercel.app/" target="_blank">gaurav.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
