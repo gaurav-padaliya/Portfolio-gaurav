@@ -7,10 +7,10 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-// const resumeLink =
-//   "https://raw.githubusercontent.com/gaurav-padaliya/Portfolio-gaurav/main/src/Assets/Resume03_23.pdf";
+const resumeLinkView =
+  "https://raw.githubusercontent.com/gaurav-padaliya/Portfolio-gaurav/main/src/Assets/Resume.pdf";
 
-const resumeLink =
+const resumeLinkDownload =
   "https://drive.google.com/uc?export=download&id=1fIg1b63fZyIkcqq45VSCYixbelV0Qsn5";
 
 // drive.google.com/file/d/1fIg1b63fZyIkcqq45VSCYixbelV0Qsn5/view?usp=sharing
@@ -29,7 +29,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={resumeLink}
+            href={resumeLinkDownload}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -39,7 +39,10 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
+          <Document
+            file={resumeLinkView}
+            className="d-flex justify-content-center"
+          >
             <Page pageNumber={1} scale={width > 500 ? 0.9 : 0.6} />
             <Page pageNumber={2} scale={width > 500 ? 0.9 : 0.6} />
           </Document>
@@ -48,7 +51,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={resumeLink}
+            href={resumeLinkDownload}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
