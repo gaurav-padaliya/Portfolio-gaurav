@@ -1,16 +1,6 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(165, 181, 220, 0.678),
-      rgba(26, 131, 217, 0.863)
-  );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(68, 55, 73, 0.678),
-    rgba(26, 131, 217, 0.863)
-  );
-
+  --section-background-color: linear-gradient(to bottom left, rgba(4, 33, 65, 0.85), rgba(1, 31, 56, 0.86));
+  --image-gradient: linear-gradient(to bottom left, rgb(0 1 6),rgba(6, 25, 102, 0.818), rgba(25, 56, 182, 0.374));
   --imp-text-color: #70b9f0;
 }
 
@@ -68,7 +58,7 @@ button:focus {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(129, 165, 243, 0.911);
   border-radius: 12px;
 }
 
@@ -155,8 +145,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 2.4em !important;
+  width: 12.5em !important;
 }
 
 .navbar-nav .nav-link {
