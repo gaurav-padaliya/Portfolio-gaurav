@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import inshots from "../../Assets/Projects/inshots.png";
+import login from "../../Assets/Projects/login.png";
+import institute from "../../Assets/Projects/institute.png";
+import verterinary from "../../Assets/Projects/verterinary.png";
+
+import chatbot from "../../Assets/Projects/chatbot.png";
+import dugout from "../../Assets/Projects/dugout.png";
 
 function Projects() {
   return (
@@ -23,68 +24,66 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={verterinary}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Verterinary Website"
+              description="The website shown is Vetvibe Healthcare's , built with Next.js , chakra UI and SCSS. It showcases veterinary products with a clean, modern design. Features include a product list and contact form, ensuring a user-friendly experience on all devices"
+              ghLink="https://github.com/gaurav-padaliya/verterinary-product"
+              demoLink="https://vetvibehealthcare.live/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={dugout}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Fantasy cricket App"
+              description="A streamlined backend of fantasy cricket web application developed with Node.js, PostgreSQL, MongoDB, and Entity Sports APIs. Users can build teams, join contests, and track live scores and leaderboards. Designed for performance and scalability, the app focuses on core functionalities to enhance user engagement in fantasy sports"
+              ghLink="https://github.com/gaurav-padaliya/Dugout-Backend"
+              demoLink="https://play.google.com/store/apps/details?id=com.dugoutlive.app&hl=en_IN"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={inshots}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="News feeds App - Inshorts"
+              description="A clone of the Inshorts news app, built with React.js, Bootstrap, and CSS. The app features a clean, modern design with a responsive layout. It includes a news feed, search functionality, and a detailed news page. The app is optimized for performance and SEO, ensuring a seamless user experience."
+              ghLink="https://github.com/gaurav-padaliya/Inshots-clone"
+              demoLink="http://gaurav-padaliya.github.io/Inshots-clone"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={chatbot}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Contextual ChatBot"
+              description="Designed and built the for a Contextual chatbot and web app similar to Groww using google dialogflow API.The chatbot help Groww users navigate the website, by providing relevant FAQsand trained chatbot according to FAQs and order details to fetch the data"
+              ghLink="https://github.com/gaurav-padaliya/chatbot_groww"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={login}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Login Auth"
+              description="This login and signup module features multiple authentication options, crafted using React.js and styled with CSS and HTML. It integrates seamlessly with Firebase Auth, supporting various authentication methods for enhanced security and user flexibility. The design is adaptable, allowing for easy integration with other projects and multiple authentication systems."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={institute}
+              isBlog={false}
+              title="Institute Website"
+              description="A website for an institute built with React.js, Bootstrap, and SCSS. The website features a clean, modern design with a responsive layout. It includes a course list, contact form, and a blog section. The website is optimized for performance and SEO, ensuring a seamless user experience."
+              ghLink="https://github.com/gaurav-padaliya/institute.github.io"
+              demoLink="https://gaurav-padaliya.github.io/institute.github.io/"
             />
           </Col>
         </Row>
