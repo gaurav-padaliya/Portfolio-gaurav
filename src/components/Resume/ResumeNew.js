@@ -41,10 +41,20 @@ function ResumeNew() {
         <Row className="resume">
           <Document
             file={resumeLinkView}
-            className="d-flex justify-content-center"
+            className={`d-flex justify-content-center ${
+              width < 500 && "flex-column"
+            }`}
           >
-            <Page pageNumber={1} scale={width > 500 ? 0.9 : 0.6} />
-            <Page pageNumber={2} scale={width > 500 ? 0.9 : 0.6} />
+            <Page
+              pageNumber={1}
+              scale={width > 500 ? 0.9 : 0.6}
+              className={`mt-2 ${width < 500 ? "m-auto" : "m-1"}`}
+            />
+            <Page
+              pageNumber={2}
+              scale={width > 500 ? 0.9 : 0.6}
+              className={`mt-2 ${width < 500 ? "m-auto" : "m-1"}`}
+            />
           </Document>
         </Row>
 
